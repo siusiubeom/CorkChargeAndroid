@@ -6,6 +6,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.ku.corkcharge.StartScreen
+import com.ku.corkcharge.onboarding.OnboardingStartScreen
 
 @Composable
 fun NavGraph(
@@ -18,8 +19,15 @@ fun NavGraph(
     ){
         composable(Route.StartScreen.route) {
             StartScreen(
-                navController
+                navController = navController
             )
         }
+
+        composable(Route.OnboardingStartScreen.route) {
+            OnboardingStartScreen(
+                navController = navController
+            )
+        }
+
     }
 }

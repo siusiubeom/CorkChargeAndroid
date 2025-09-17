@@ -32,3 +32,25 @@ val Glass_Soft = Color(0xFFDCDBE8)
 val Olive = Color(0xFF749755)
 
 val Olive_Soft = Color(0xFF749755)
+
+
+val Black = Color(0xFF000000)
+
+val White = Color(0xFFFFFFFF)
+
+
+val Gray_1 = Color(0xFFF9F9FA)
+
+val Gray_2 = Color(0xFFECEDEF)
+
+val Gray_3 = Color(0xFFDBDDE1)
+
+val Gray_4 = Color(0xFFC5C8CF)
+
+val Gray_5 = Color(0xFF9FA2AA)
+
+val Gray_6 = Color(0xFF80818B)
+
+val Gray_7 = Color(0xFF585A68)
+
+val Gray_8 = Color(0xFF35353F)

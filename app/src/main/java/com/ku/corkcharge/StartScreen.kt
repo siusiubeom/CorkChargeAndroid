@@ -18,17 +18,19 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import com.ku.corkcharge.navigation.Route
 import com.ku.corkcharge.ui.theme.Burgundy
 import com.ku.corkcharge.ui.theme.Glass_Soft
 import kotlinx.coroutines.delay
 
 @Composable
 fun StartScreen(
+    modifier: Modifier = Modifier,
     navController: NavHostController
 ){
     LaunchedEffect(Unit) {
         delay(1000)
-        navController.navigate()
+        navController.navigate(Route.OnboardingStartScreen.route)
         navController.popBackStack()
     }
     Box(
@@ -67,5 +69,5 @@ fun StartScreen(
 @Composable
 fun OnboardingStartScreenPreview(){
     val navController = rememberNavController()
-    StartScreen(navController)
+    StartScreen(navController = navController)
 }

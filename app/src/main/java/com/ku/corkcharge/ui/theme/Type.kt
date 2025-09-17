@@ -34,3 +34,7 @@ val Typography = Typography(
     )
     */
 )
+
+val Pretendard = FontFamily(
+    Font(R.font.pretendard)
+)
