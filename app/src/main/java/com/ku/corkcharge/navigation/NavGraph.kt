@@ -2,10 +2,11 @@ package com.ku.corkcharge.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.platform.LocalContext
-import androidx.navigation.NavController
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+import com.ku.corkcharge.StartScreen
+import com.ku.corkcharge.onboarding.OnboardingStartScreen
 
 @Composable
 fun NavGraph(
@@ -14,9 +15,19 @@ fun NavGraph(
 ){
     NavHost(
         navController = navController,
-        startDestination = ""
+        startDestination = Route.StartScreen.route
     ){
+        composable(Route.StartScreen.route) {
+            StartScreen(
+                navController = navController
+            )
+        }
 
+        composable(Route.OnboardingStartScreen.route) {
+            OnboardingStartScreen(
+                navController = navController
+            )
+        }
 
     }
 }
